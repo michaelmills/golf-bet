@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="htmx-config" content='{"selfRequestsOnly": false}' />
+    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Golf Bet</title>
+  </head>
+  <body class="bg-slate-900">
+    <div class="text-center">
+      <h1 class="text-white text-2xl font-bold mt-5">The Opus Golf Championship</h1>
+      <h2 class="text-white text-lg italic mb-5">* PGA Championship Edition *</h2>
+      <div
+        hx-get="/leaderboard"
+        hx-trigger="load"
+      </div>
+    </div>
+  </body>
+</html>
+
+
